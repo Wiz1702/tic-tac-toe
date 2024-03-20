@@ -1,1 +1,36 @@
-
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width" />
+<title>WISDOM'S TICKY TACKTOE</title>
+<link href="tictac.css" rel="stylesheet" type="text/css" />
+  
+</head>
+<body onload="startTicTacToe();">
+<h1>WISDOM'S TICKY TACKTOE</h1>
+<div id="message"></div>
+<table border="1">
+<tr>
+<td class="box" id="b1" onClick="nextMove(this)"></td>
+<td class="box" id="b2" onClick="nextMove(this)"></td>
+<td class="box" id="b3" onClick="nextMove(this)"></td>
+</tr>
+<tr>
+<td class="box" id="b4" onClick="nextMove(this)"></td>
+<td class="box" id="b5" onClick="nextMove(this)"></td>
+<td class="box" id="b6" onClick="nextMove(this)"></td>
+</tr>
+<tr>
+<td class="box" id="b7" onClick="nextMove(this)"></td>
+<td class="box" id="b8" onClick="nextMove(this)"></td>
+<td class="box" id="b9" onClick="nextMove(this)"></td>
+</tr>
+</table>
+<br><br>
+<button id="btn" onClick="history.go(0)">Reset</button>
+<button id="toggle" onclick="togglePlayer()">Toggle Player</button>
+<script src="tictac.js"></script>
+</body>
+</html>
+<footer>&copy;Wisdom Akanwe 2024</footer>
